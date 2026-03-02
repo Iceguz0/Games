@@ -1,11 +1,23 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Duck Life</title>
   </head>
   <body>
-    <object>
+    <div class="game-container">
+      <object>
         <embed src="http://iceguz0.github.io/Games/FlashFiles/ducklife1.swf" width="640" height="480" />
-    </object>
+      </object>
+    </div>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        "scale": "showAll",
+        "letterbox": "on",
+        "forceScale": true,
+        "backgroundColor": "#000000"
+      };
+    </script>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </body>
 </html>
